@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Card.css">
+    <title>Wedding Invitation</title>
+</head>
+
+<body>
+
+    <!-- =========================
+     FLOWERS
+========================= -->
+    <div class="flower-container" id="flowerContainer"></div>
+
+    <!-- =========================
+     MUSIC
+========================= -->
+    <audio id="weddingMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+        🎵
+    </button>
+
+    <!-- =========================
+     SLIDER
+========================= -->
+    <div class="slider" id="slider">
+
+        <!-- =========================
+     PAGE 1 - ISLAMIC WEDDING
+========================= -->
+        <section class="page active" id="page1">
+            <div class="frame islamic-cover">
+                <div class="islamic-card">
+                    <!-- Decorative corners -->
+                    <div class="islamic-corner top-right">✦</div>
+                    <div class="islamic-corner bottom-left">✦</div>
+                    <div class="islamic-corner bottom-right">✦</div>
+
+                    <!-- Mehrab -->
+                    <div class="mehrab">
+                        <div class="islamic-moon"></div>
+                        <div class="islamic-star">✦</div>
+                    </div>
+
+                    <!-- Bismillah -->
+                    <div class="islamic-bismillah">
+                        بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                    </div>
+
+                    <!-- Small heading -->
+                    <div class="invitation-label">
+                        IN THE NAME OF ALLAH
+                    </div>
+
+                    <!-- Names -->
+                    <div class="islamic-names">
+                        <div class="bride-name" style="margin-bottom: 10px;">Rashid</div>
+                        <div class="and-symbol">Weds</div>
+                        <div class="groom-name">Gulfrin</div>
+                    </div>
+
+                    <!-- Urdu Names -->
+                    <div class="islamic-urdu-names">
+                        محمد راشد انصاری
+                        <br>
+                        گلفرین پروین
+                    </div>
+
+                    <!-- Nikah -->
+                    <div class="nikah-badge">
+                        NIKAH
+                    </div>
+
+                    <!-- Date -->
+                    <div class="islamic-date">
+                        10 • NOVEMBER • 2026
+                        <span>NIKAH MUBARAK</span>
+                    </div>
+
+                    <!-- Ornament -->
+                    <div class="gold-ornament">
+                        ❖ ✦ ❖
+                    </div>
+
+                    <!-- Dua -->
+                    <div class="islamic-dua">
+                        اللہ تعالیٰ اس نئے سفر کو
+                        محبت، خوشیوں اور برکتوں سے بھر دے۔
+                        <br>
+                        آپ دونوں کی جوڑی ہمیشہ سلامت رہے۔
+                        <br>
+                        <strong>نکاح مبارک!</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+     PAGE 2
+========================= -->
+        <!-- ========================= PAGE 2 ========================= -->
+        <section class="page" id="page2">
+            <div class="frame">
+                <div class="content">
+                    <div class="page-title"> With The Blessings Of </div>
+                    <div class="page-subtitle"> OUR BELOVED FAMILIES </div>
+                    <div class="family-grid"> <!-- GROOM / DULHA - TOP -->
+                        <div class="family-card">
+                            <h2>Groom's Family</h2>
+                            <div class="name"> Md. Rashid Ansari </div>
+                            <p class="urdu"> محمد راشد انصاری </p>
+                            <p> Son of<br> <strong>Md. Farooque Ansari</strong> </p>
+                            <p> Malah Bigha, Islampur, Nalanda </p>
+                        </div> <!-- BRIDE / DULHAN - BOTTOM -->
+                        <div class="family-card">
+                            <h2>Bride's Family</h2>
+                            <div class="name"> Gulfrin Perween </div>
+                            <p class="urdu"> گلفرین پروین </p>
+                            <p> Daughter of<br> <strong>Late Samim Alam</strong> </p>
+                            <p> MoghalKoun, Sohsarai, Biharsharif, Nalanda </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+     PAGE 3
+========================= -->
+        <section class="page" id="page3">
+            <div class="frame">
+                <div class="content">
+                    <div class="page-title">
+                        Wedding Celebrations
+                    </div>
+                    <div class="page-subtitle">
+                        THREE DAYS • THREE MEMORIES • ONE BEAUTIFUL JOURNEY
+                    </div>
+
+                    <div class="events">
+                        <div class="event">
+                            <div class="event-icon">🌼</div>
+                            <div>
+                                <<h2>Quran Khani</h2>
+                                    <div class="event-date">8 November 2026 📿🕌📿</div>
+                                    <p>Seeking Allah's blessings for the new journey.</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <div class="event-icon">🌸</div>
+                            <div>
+                                <h2> Haldi & Mardwa</h2>
+                                <div class="event-date">9 November 2026</div>
+                                <p>A beautiful family celebration before the Nikah.</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <div class="event-icon">💍</div>
+                            <div>
+                                <h2>Nikah</h2>
+                                <div class="event-date">10 November 2026</div>
+                                <p>The beautiful beginning of a lifetime together.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+     PAGE 4
+========================= -->
+        <section class="page" id="page4">
+            <div class="frame">
+                <div class="content loved">
+                    <div class="page-title">
+                        Our Loved Ones
+                    </div>
+                    <div class="page-subtitle">
+                        FAMILY • LOVE • BLESSINGS
+                    </div>
+
+                    <div class="people">
+                        <div class="person">
+                            <h3>Md. Farooque Ansari</h3>
+                            <p>Ladke ke Abbu</p>
+                        </div>
+                        <div class="person">
+                            <h3>Md Jahid</h3>
+                            <p>Ladke ke Jiju</p>
+                        </div>
+                        <div class="person">
+                            <h3>Rahmaan</h3>
+                            <p>Bride's Big Brother</p>
+                        </div>
+                        <div class="person">
+                            <h3>Qumar</h3>
+                            <p>Bride's Brother</p>
+                        </div>
+                        <div class="person">
+                            <h3>Tajajuddin</h3>
+                            <p>Bride's Brother</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        For attendance / contact:
+                        <strong>9874367231 & 7479959223</strong>
+                    </div>
+
+                    <div class="final-dua">
+                        دعاؤں میں یاد رکھیے گا
+                        <br>
+                        آپ کی شرکت ہمارے لیے باعثِ خوشی ہوگی۔
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+     PAGE 5
+========================= -->
+        <section class="page" id="page5">
+            <div class="frame">
+                <div class="content venue">
+                    <div class="page-title">Join Us</div>
+                    <div class="page-subtitle">WE WOULD LOVE TO CELEBRATE WITH YOU</div>
+                    <div class="venue-name">Radha Krishna Palace</div>
+                    <div class="venue-address">
+                        Sahokhar, Sohsarai,<br>
+                        Bihar Sharif, Bihar
+                    </div>
+
+                    <div class="buttons">
+                        <a class="btn"
+                            href="https://www.google.com/maps/search/?api=1&query=Radha+Krishna+Palace%2C+Ghoghardiha+-+Durgasthan+Rd%2C+Sahokar%2C+Sohsarai%2C+Bihar+Sharif%2C+Bihar+803118&utm_source=chatgpt.com"
+                            target="_blank">
+                            📍 Open Google Maps
+                        </a>
+                        <a class="btn"
+                            href="https://wa.me/9874367231?text=Assalamualaikum%2C%20I%20would%20like%20to%20confirm%20my%20attendance%20for%20Gulfreen%20%26%20Rashid%27s%20wedding."
+                            target="_blank">
+                            💬 RSVP on WhatsApp
+                        </a>
+                        <a class="btn" href="tel: 9874367231">
+                            📞 Call
+                        </a>
+                    </div>
+
+                    <div class="final-dua">
+                        بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                        <br><br>
+                        اللہ تعالیٰ ہماری زندگی کے اس نئے سفر کو
+                        محبت، سکون، خوشیوں اور برکتوں سے بھر دے۔
+                        <br>
+                        آمین ثم آمین
+                        <br><br>
+                        <strong> Rashid &amp; Gulfrin</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- =========================
+     NAVIGATION
+========================= -->
+    <div class="nav">
+        <button onclick="goToPage(currentPage-1)">‹</button>
+        <button onclick="goToPage(currentPage+1)">›</button>
+    </div>
+
+    <!-- =========================
+     DOTS
+========================= -->
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
